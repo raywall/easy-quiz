@@ -1,0 +1,133 @@
+/* styles.css */
+
+/* Container principal do quiz */
+.quiz-container {
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+/* Esconde o código bruto na visualização normal */
+.markdown-preview-view .quiz-source {
+  display: none;
+}
+
+/* Mostra o código durante a edição */
+.markdown-source-view .quiz-source {
+  display: block;
+  font-family: var(--font-monospace);
+  color: var(--text-muted);
+  font-size: 0.9em;
+}
+
+/* Preview formatado das questões */
+.quiz-preview {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  background-color: var(--background-primary);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Estilo da pergunta */
+.quiz-question {
+  font-weight: 600;
+  color: var(--text-normal);
+  margin-bottom: 1rem;
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+/* Container das opções */
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Estilo individual de cada opção */
+.quiz-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: var(--background-secondary);
+  transition: background-color 0.15s ease;
+}
+
+.quiz-option:hover {
+  background-color: var(--background-secondary-alt);
+}
+
+/* Estilo dos inputs */
+.quiz-option input {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-accent);
+  pointer-events: none;
+}
+
+/* Texto das opções */
+.quiz-option span {
+  color: var(--text-normal);
+  font-size: 0.95em;
+}
+
+/* Estilos específicos para modo de visualização */
+.markdown-preview-view .quiz-preview {
+  border-left: 4px solid var(--color-accent);
+  background-color: var(--background-primary);
+}
+
+/* Esconde o preview durante a edição */
+.markdown-source-view .quiz-preview {
+  display: none;
+}
+
+/* Ajustes para temas escuros */
+.theme-dark .quiz-preview {
+  border-color: var(--background-modifier-border-hover);
+}
+
+/* Estilo dos resultados do simulado */
+.quiz-result {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 3px solid var(--color-accent);
+  background-color: var(--background-secondary);
+}
+
+.quiz-result h3 {
+  color: var(--color-accent);
+  margin-top: 0;
+}
+
+/* Botão de próxima questão */
+.quiz-button {
+  margin-top: 1rem;
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.quiz-button:hover {
+  opacity: 0.9;
+}
+
+/* Estatísticas finais */
+.quiz-stats {
+  padding: 1rem;
+  background-color: var(--background-secondary);
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+.quiz-stats h2 {
+  margin-top: 0;
+  color: var(--text-accent);
+}

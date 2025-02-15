@@ -1,0 +1,12 @@
+{
+    "id": "obsidian-smart-quiz",
+    "name": "Obsidian Smart Quiz",
+    "version": "1.0.0",
+    "minAppVersion": "1.1.0",
+    "author": "Raywall Malheiros",
+    "description": "Gerador de simulados para obsidian",
+    "fundingUrl": "https://github.com/raywall/obsidian-smart-quiz",
+    "authorUrl": "https://github.com/raywall",
+    "repo": "raywall/obsidian-smart-quiz",
+    "isDesktopOnly": false
+  }

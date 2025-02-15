@@ -1,0 +1,21 @@
+{
+  "name": "obsidian-smart-quiz",
+  "version": "1.0.0",
+  "description": "Gerador de simulados AWS para Obsidian",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "dev": "npm run build -- --watch"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.11.7",
+    "obsidian": "latest",
+    "rollup": "^4.12.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {}
+}
