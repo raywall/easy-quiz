@@ -1,7 +1,7 @@
 {
   "id": "easy-quiz",
   "name": "Easy Quiz",
-  "version": "1.0.0",
+  "version": "v1.0.0",
   "minAppVersion": "1.1.0",
   "author": "Raywall Malheiros",
   "description": "Gerador de simulados para obsidian",
