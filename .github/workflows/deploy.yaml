@@ -36,7 +36,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ steps.version.outputs.VERSION }}
-          name: "Obsidian Smart Quiz v${{ steps.version.outputs.VERSION }}"
+          name: "Easy Quiz v${{ steps.version.outputs.VERSION }}"
           body: "Automatic release from main branch"
           files: |
             dist/main.js
