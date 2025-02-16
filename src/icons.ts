@@ -1,6 +1,6 @@
 import { addIcon } from 'obsidian';
 
-export const QuizIcon = 'quiz-icon';
+export const QuizIcon = 'easy-icon';
 
 addIcon(
 	QuizIcon,
