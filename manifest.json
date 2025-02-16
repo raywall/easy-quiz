@@ -5,8 +5,8 @@
   "minAppVersion": "1.1.0",
   "author": "Raywall Malheiros",
   "description": "Gerador de simulados para obsidian",
-  "fundingUrl": "https://github.com/raywall/obsidian-easy-quiz",
+  "fundingUrl": "https://github.com/raywall/easy-quiz",
   "authorUrl": "https://github.com/raywall",
-  "repo": "raywall/obsidian-easy-quiz",
+  "repo": "raywall/easy-quiz",
   "isDesktopOnly": false
 }

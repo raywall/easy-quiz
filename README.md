@@ -1,7 +1,6 @@
-```markdown
-# AWS Quiz Generator for Obsidian 🚀
+# Easy Quiz plugin for Obsidian 🚀
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/raywall/obsidian-smart-quiz/deploy.yml)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/raywall/easy-quiz/deploy.yml)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
 Plugin para criação de simulados AWS dentro do Obsidian, ideal para preparação para certificações profissionais da Amazon Web Services.
@@ -15,6 +14,7 @@ Plugin para criação de simulados AWS dentro do Obsidian, ideal para preparaç�
 - 🎯 Compatível com exame AWS Certified Solutions Architect e outras certificações
 - 🖥 Renderização na barra lateral ou popup
 
+
 ## 📥 Instalação
 
 ### Método 1: Via Obsidian
@@ -23,14 +23,14 @@ Plugin para criação de simulados AWS dentro do Obsidian, ideal para preparaç�
 3. Instale e ative o plugin
 
 ### Método Manual
-1. Baixe a última release do [GitHub Releases](https://github.com/seuuser/obsidian-smart-quiz/releases)
+1. Baixe a última release do [GitHub Releases](https://github.com/seuuser/easy-quiz/releases)
 2. Extraia o ZIP em:
    ```bash
    # Linux/Mac
-   ~/.obsidian/plugins/obsidian-smart-quiz/
+   ~/.obsidian/plugins/easy-quiz/
 
    # Windows
-   %APPDATA%\obsidian\plugins\obsidian-smart-quiz\
+   %APPDATA%\obsidian\plugins\easy-quiz\
    ```
 3. Recarregue o Obsidian (Ctrl/Cmd+R)
 
@@ -49,7 +49,7 @@ Tipo: single
 ```
 
 ### 2. Iniciar Simulado
-- **Comando:** `Ctrl/Cmd+P` → "Start AWS Quiz"
+- **Comando:** `Ctrl/Cmd+P` → "Start Quiz"
 - **Botão:** Ícone na barra lateral (🔍)
 
 ## 🛠 Desenvolvimento
@@ -60,8 +60,8 @@ Tipo: single
 
 ### Configuração
 ```bash
-git clone https://github.com/raywall/obsidian-smart-quiz.git
-cd obsidian-aws-quiz
+git clone https://github.com/raywall/easy-quiz.git
+cd easy-quiz
 npm install
 ```
 
@@ -71,7 +71,7 @@ npm install
 npm run dev
 
 # Copiar para Obsidian (Mac/Linux)
-./build-and-copy.sh
+./local-deploy.sh
 ```
 
 ## 🤝 Contribuição
@@ -92,4 +92,3 @@ MIT License - Consulte o arquivo [LICENSE](LICENSE) para detalhes.
 - [Plugin Development Guide](https://docs.obsidian.md/Plugins)
 
 > Nota: Este projeto não é afiliado à Amazon Web Services. AWS é uma marca registrada da Amazon.com, Inc.
-# obsidian-smart-quiz
