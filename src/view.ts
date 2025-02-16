@@ -1,5 +1,6 @@
 import { ItemView, WorkspaceLeaf } from 'obsidian';
 import { Question } from './question';
+import { QuizIcon } from './icons';
 
 export class QuizView extends ItemView {
     questions: Question[];
@@ -21,7 +22,13 @@ export class QuizView extends ItemView {
         return 'Quiz';
     }
 
+    getIcon(): string {
+        return QuizIcon;
+    }
+
     async onOpen(): Promise<void> {
+        super.onOpen();
+        this.addAction(QuizIcon, "Quiz", () => {});
         this.render();
     }
 

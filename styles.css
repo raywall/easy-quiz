@@ -1,40 +1,60 @@
-/* styles.css */
-
-/* Container principal do quiz */
+/* containerPrincipalDoQuiz */
 .quiz-container {
   margin: 1.5rem 0;
   position: relative;
 }
 
-/* Esconde o código bruto na visualização normal */
-.markdown-preview-view .quiz-source {
-  display: none;
+/* Completely hides the source code in viewing */
+.markdown-source-view .quiz-source {
+  display: none !important;
 }
 
-/* Mostra o código durante a edição */
+/* Show the code during the edition */
 .markdown-source-view .quiz-source {
   display: block;
-  font-family: var(--font-monospace);
-  color: var(--text-muted);
-  font-size: 0.9em;
-}
-
-/* Preview formatado das questões */
-.quiz-preview {
   border: 1px solid var(--background-modifier-border);
-  border-radius: 8px;
-  padding: 1.25rem;
-  background-color: var(--background-primary);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 4px;
 }
 
-/* Estilo da pergunta */
+/* Hides the preview during the edition */
+.markdown-preview-view .quiz-preview {
+  display: none !important;
+}
+
+/* Ensures that only preview is visible */
+.markdown-preview-view .quiz-preview {
+  display: block;
+  border: 1px solid var(--background-modifier-border);
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 4px;
+}
+
+/* Adjustments for dark themes */
+.theme-dark .quiz-preview {
+  border-color: var(--background-modifier-border-hover);
+}
+
+.quiz-question-line {
+  padding-bottom: .5em;
+}
+
+/* Question style */
 .quiz-question {
-  font-weight: 600;
+  font-weight: 400;
   color: var(--text-normal);
   margin-bottom: 1rem;
-  font-size: 1.1em;
+  font-size: .9em;
   line-height: 1.4;
+}
+
+/* Estilo para questões de múltiplas linhas */
+.quiz-question-text {
+  white-space: pre-wrap;
+  margin-bottom: 1em;
+  line-height: 1.6;
 }
 
 /* Container das opções */
@@ -72,22 +92,6 @@
 .quiz-option span {
   color: var(--text-normal);
   font-size: 0.95em;
-}
-
-/* Estilos específicos para modo de visualização */
-.markdown-preview-view .quiz-preview {
-  border-left: 4px solid var(--color-accent);
-  background-color: var(--background-primary);
-}
-
-/* Esconde o preview durante a edição */
-.markdown-source-view .quiz-preview {
-  display: none;
-}
-
-/* Ajustes para temas escuros */
-.theme-dark .quiz-preview {
-  border-color: var(--background-modifier-border-hover);
 }
 
 /* Estilo dos resultados do simulado */
