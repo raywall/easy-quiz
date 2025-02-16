@@ -1,5 +1,5 @@
 {
-  "name": "obsidian-smart-quiz",
+  "name": "easy-quiz",
   "version": "1.0.0",
   "description": "Gerador de simulados AWS para Obsidian",
   "main": "dist/main.js",

@@ -2,7 +2,7 @@
 
 # Configurações
 OBSIDIAN_PLUGINS_DIR="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/.obsidian/plugins"
-PLUGIN_NAME="obsidian-smart-quiz"
+PLUGIN_NAME="obsidian-easy-quiz"
 
 # Executa o build
 echo "🛠  Building plugin..."
