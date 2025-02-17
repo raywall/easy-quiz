@@ -1,30 +1,30 @@
 # Easy Quiz plugin for Obsidian 🚀
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/raywall/easy-quiz/deploy.yml)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/raywall/obsidian-easy-quiz-plugin/deploy.yml)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-Plugin para criação de simulados AWS dentro do Obsidian, ideal para preparação para certificações profissionais da Amazon Web Services.
+Plugin for Creation of AWS Simulates within Obsidian, ideal for preparation for professional certifications of Amazon Web Services.
 
-## ✨ Recursos
+## ✨ Resources
 
-- ✅ Geração automática de simulados a partir de questões no formato Markdown
-- 🔀 Suporte para questões de múltipla escolha e múltiplas respostas
-- 📊 Resultados detalhados com estatísticas de desempenho
-- 📖 Modo de revisão com explicações técnicas
-- 🎯 Compatível com exame AWS Certified Solutions Architect e outras certificações
-- 🖥 Renderização na barra lateral ou popup
+- ✅ Automatic generation of simulations from questions in Markdown format
+- 🔀 Support for multiple choice questions and multiple answers
+- 📊 Detailed results with performance statistics
+- 📖 Review mode with technical explanations
+- 🎯 Compatible with AWS EXAMINATION CERTIFIED Solutions Architect and other certifications
+- 🖥 Rendering in the sidebar or popup
 
 
-## 📥 Instalação
+## 📥 Installation
 
-### Método 1: Via Obsidian
-1. Acesse `Settings` → `Community plugins` → `Browse`
-2. Pesquise por "Obsidian Smart Quiz"
-3. Instale e ative o plugin
+### Method 1: Via Obsidian
+1. Access `settings` → `communityPlugins` → `browse`
+2. Search for "Start Quiz"
+3. Install and activate the plugin
 
-### Método Manual
-1. Baixe a última release do [GitHub Releases](https://github.com/seuuser/easy-quiz/releases)
-2. Extraia o ZIP em:
+### Manual method
+1. Download the last release of [GitHub Releases](https://github.com/raywall/obsidian-easy-quiz-plugin/releases)
+2. Extract zip at:
    ```bash
    # Linux/Mac
    ~/.obsidian/plugins/easy-quiz/
@@ -32,63 +32,63 @@ Plugin para criação de simulados AWS dentro do Obsidian, ideal para preparaç�
    # Windows
    %APPDATA%\obsidian\plugins\easy-quiz\
    ```
-3. Recarregue o Obsidian (Ctrl/Cmd+R)
+3. Recharge Obsidian (CTRL/CMD+R)
 
-## 🚦 Como Usar
+## 🚦 How to use
 
-### 1. Criar Questões
+### 1. Create questions
 ```markdown
 ```quiz
-Qual serviço AWS é ideal para bancos de dados relacionais?
-- [x] Amazon RDS
-- [ ] Amazon S3
-- [ ] Amazon EC2
-Explicação: RDS é o serviço gerenciado para bancos de dados relacionais
-Tipo: single
+   Which AWS service is ideal for relational databases?
+   - [x] Amazon RDS
+   - [ ] Amazon S3
+   - [ ] Amazon EC2
+   Explanation: RDS is the managed service for relational databases
+   Type: single
 \```
 ```
 
-### 2. Iniciar Simulado
-- **Comando:** `Ctrl/Cmd+P` → "Start Quiz"
-- **Botão:** Ícone na barra lateral (🔍)
+### 2. Start quiz
+- **Command:** `Ctrl/Cmd+P` → "Start Quiz"
+- **Button:** Icon in the sidebar (🔍)
 
-## 🛠 Desenvolvimento
+## 🛠 Development
 
-### Pré-requisitos
+### Prerequisites
 - Node.js 18+
 - Obsidian Desktop
 
-### Configuração
+### Settings
 ```bash
-git clone https://github.com/raywall/easy-quiz.git
-cd easy-quiz
+git clone https://github.com/raywall/obsidian-easy-quiz-plugin.git
+cd obsidian-easy-quiz-plugin
 npm install
 ```
 
-### Build e Teste
+### Build and Test
 ```bash
-# Build contínuo
-npm run dev
+# Continuous build
+npm run build
 
-# Copiar para Obsidian (Mac/Linux)
+# Copy for Obsidian (Mac/Linux)
 ./local-deploy.sh
 ```
 
-## 🤝 Contribuição
-1. Faça fork do projeto
-2. Crie uma branch (`git checkout -b feature/nova-funcionalidade`)
-3. Commit suas mudanças (`git commit -m 'Add nova funcionalidade'`)
-4. Push para a branch (`git push origin feature/nova-funcionalidade`)
-5. Abra um Pull Request
+## 🤝 Contribution
+1. Take the project fork
+2. Create a branch (`git checkout -b feature/nova-funcionalidade`)
+3. Commit your changes (`git commit -m 'Add nova funcionalidade'`)
+4. Push the branch (`git push origin feature/nova-funcionalidade`)
+5. Open a Pull Request
 
-## 📄 Licença
-MIT License - Consulte o arquivo [LICENSE](LICENSE) para detalhes.
+## 📄 License
+MIT License - Check the file [LICENSE](LICENSE)
 
 ---
 
-🔗 **Links Úteis**:
+🔗 **Useful Links**:
 - [Obsidian Documentation](https://help.obsidian.md)
 - [AWS Certification Portal](https://aws.amazon.com/certification/)
 - [Plugin Development Guide](https://docs.obsidian.md/Plugins)
 
-> Nota: Este projeto não é afiliado à Amazon Web Services. AWS é uma marca registrada da Amazon.com, Inc.
+> Note: This project is not affiliated with Amazon Web Services.AWS is a trademark of Amazon.com, Inc.

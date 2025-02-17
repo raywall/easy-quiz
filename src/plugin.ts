@@ -44,10 +44,6 @@ export default class QuizPlugin extends Plugin {
         });
     }
 
-    onunload() { 
-        this.app.workspace.detachLeavesOfType("quiz-view");
-    }
-
     private renderQuestionPreview(container: HTMLElement, question: Question) {
         const questionEl = container.createEl('div', { cls: 'quiz-question' });
         
